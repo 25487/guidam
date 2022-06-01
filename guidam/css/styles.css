@@ -1,0 +1,258 @@
+/* importeer fonts uit onze eigen mappen */
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../assets/FilsonProRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: 'AcuminVariable';
+	src: url('../assets/AcuminVariableConcept.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* CSS reset, deze zet standaard alle witruimte (margin en padding) op 0. Je moet dan zelf overal weer margin en padding toevoegen op de elementen waar je dit wel wilt hebben.
+   Ook zorgen we dat voor alle block elementen de afmetingen niet alleen worden bepaald door de content, maar dat ook padding en border meetellen.
+   Dit ontwerpt makkelijker.
+   Zie: https://www.internetingishard.com/html-and-css/css-box-model/#content-boxes-and-border-boxes  */
+*, html {
+  margin:0;
+  padding:0;
+	box-sizing: border-box;
+}
+
+/* Stel een witte achtergrond in en geef de body een beetje margin, relatief ten opzichte van het schermformaat */
+body {
+	background-color: #FFFFFF;
+	/* margin: 5vh 5vw 5vh 5vw; */
+}
+
+/* onderstaande styles voor de <h1>, <h2>, <p> an <a> tags geven een voorbeeld
+   hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+
+h1 {
+	font-family: 'FilsonPro', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #5475B6;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-family: 'FilsonPro', sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	background-color: #EB4F75;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+h3 {
+	font-family: 'FilsonPro', sans-serif;
+}
+
+h4 {
+	font-family: 'FilsonPro', sans-serif;
+}
+
+p {
+	font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5em;
+}
+
+figcaption{
+  font-family: 'AcuminVariable', sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 18px;
+}
+
+ul, li {
+  font-family: 'AcuminVariable', sans-serif;
+  font-size: 1em;
+}
+
+ul{
+  padding-left: 15px;
+}
+
+ol{
+    padding-left: 15px;
+}
+ol, li{
+  font-family: 'AcuminVariable', sans-serif;
+  font-size: 1em;
+}
+/* figure{
+  padding-bottom: 10px;
+} */
+figure a{
+  color: black;
+  text-decoration:none;
+}
+figure img{
+width:100%;
+}
+
+a {
+	color: #EB4F75;
+}
+footer{
+position: fixed;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+font-family: 'AcuminVariable', sans-serif;
+padding-top: 10px;
+margin: 0;
+}
+
+footer p{
+  font-size: 12px;
+  color: white;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+ul a{
+  color: black;
+  text-decoration: none;
+}
+
+
+/* navigatie */
+nav{
+  position: sticky;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
+nav #Links {
+  display: none;
+}
+
+nav a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: 'AcuminVariable', sans-serif;
+}
+
+nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 15px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav .active {
+  background-color: #3399CC;
+  color: black;
+}
+/* einde nav */
+
+
+/* classes */
+.travelways h4{
+  padding-top: 10px;
+}
+.travel-maps{
+  width: 100%;
+  padding-top: 3px;
+}
+
+.logo{
+  padding-top: 7px;
+  width: 120px;
+}
+.fa-bars{
+  font-size: 25px;
+  padding-top: 9px;
+  color: white;
+}
+#options{
+  margin: 5vh 5vw 5vh 5vw;
+}
+#options img{
+  width: 100%
+}
+.travel-maps h4{
+  padding-bottom: 3px;
+}
+.opening{
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.opening ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.prijs ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.prijs li{
+  list-style-type: none;
+  padding-left: 0;
+}
+.prijs{
+  padding-bottom: 5px;
+
+}
+
+.title-relaxend{
+  padding-bottom: 5px;
+}
+.title-adventurous{
+  padding-bottom: 5px;
+}
+.googlemaps{
+  width: 100%;
+  border: none;
+}
+.googlemaps p{
+  margin-bottom: 0.2em;
+  color: black;
+}
+.hotspots-bottom{
+  padding-bottom: 20px;
+}
+#options-hotspots{
+  margin: 5vh 5vw 5vh 5vw;
+}
+#options-hotspots a{
+  color: black;
+  text-decoration: none;
+}
+
+.hamburger{
+width: 25px;
+height: 4px;
+background-color: white;
+margin: 5px 0;
+}
