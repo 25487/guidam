@@ -1,2 +1,2 @@
 # guidam
-CMD portfolio
+De code voor het Guidam project
